@@ -1,0 +1,141 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная";
+}
+<head>
+    <!-- Bootstrap 5 CDN -->
+    <link href=
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  
+          rel="stylesheet">
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</head>
+<tbody>
+<div class="center-container">
+    
+    <!-- Навбар -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/images/logo.svg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tokenomics">Tokenomics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/whitepaper.pdf" target="_blank">WhitePaper</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Баннер -->
+    <section id="hero" class="section text-center">
+        <h1 class="display-3 fs-bold">MyToken (СКАМ)</h1>
+        <p class="lead">Самая охуенная скам-монета, бля буду, покупайте ребята</p>
+        <a href="#roadmap" class="btn btn-light btn-lg mt-3">Explore Roadmap</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section text-center">
+        <h2>About Us</h2>
+        <p class="mt-3 fs-5">
+            Можно написать много рекламных слоганов про монету, но мне сейчас лень их придумывать. Скорее всего попрошу нейросеть сделать это. И то не сейчас
+        </p>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="section text-center">
+        <h2>Roadmap</h2>
+        <div class="mt-4 fs-5">
+            <p>Фаза 1</p>
+            <ul class="list-unstyled">
+                <li>Запустить на продакшн сайт</li>
+                <li>Заказать рекламу у взятого в плен блоггера</li>
+            </ul>
+
+            <p>Фаза 2</p>
+            <ul class="list-unstyled">
+                <li>Листинг монеты на биржах</li>
+                <li>Куча ебланов скупает монету, делая нам бабки</li>
+            </ul>
+
+            <p>Фаза 3</p>
+            <ul class="list-unstyled">
+                <li>Забираем бабки и радуемя, монету дропаем</li>
+                <li>Накидываем денег дяде Диме</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Tokenomics -->
+    <section id="tokenomics" class="section text-center">
+        <h2>Tokenomics</h2>
+        <div class="mt-4 fs-5">
+            <p>дохуя% Капитализация+ за месяц</p>
+            <p>дохуя% Затрат на разработку сайта (на самом деле нет)</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section text-center">
+        <h2>FAQ</h2>
+        <details class="d-block mt-4 mb-3 mx-auto w-75 p-3 rounded bg-white bg-opacity-10">
+            <summary class="fw-bold">Что такое MyToken-монета?</summary>
+            <p class="mt-2">Это наскоро созданная монета на основе хуй знает чего</p>
+
+            <summary class="fw-bold">Какой проект лежит в основе MyToken?</summary>
+            <p class="mt-2">Никакого. Это пустышка для дебилов</p>
+
+            <summary class="fw-bold">Смогу ли я на этом заработать?</summary>
+            <p class="mt-2">Ответ - конечно нет. В лучшем случае на этом заработают создатели проекта</p>
+
+            <summary class="fw-bold">Каков шанс, что меня наебут??</summary>
+            <p class="mt-2">Если опираться на имеющиеся данные, то примерно 100%</p>
+        </details>
+    </section>
+</div>
+
+<!-- Футер -->
+<footer class="footer-wrapper text-center">
+    <p>&copy; 2025 MamaBull. Все права защищены.</p>
+
+    <div class="social-links">
+        <a href="https://x.com/MyToken" target="_blank" class="social-link w-inline-block">
+            <img src="/img/YouTub.png" alt="X (Twitter)" class="icon-2"/>
+        </a>
+        <a href="https://t.me/MyToken" target="_blank" class="social-link w-inline-block">
+            <img src="/images/telegram.png" alt="Telegram" class="icon-2"/>
+        </a>
+        <a href="https://youtube.com/mamaBullToken"  target="_blank" class="social-link w-inline-block">
+            <img src="/images/youtube.png" alt="YouTube" class="icon-2" />
+        </a>
+    </div>
+    
+</footer>
+
+<script>
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.3 // 30% видимости секции запускает анимацию
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</tbody>
+

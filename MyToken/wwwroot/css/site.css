@@ -1,0 +1,174 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/*------------------------Кастомные стили Index*------------------------/
+
+/* Градиентный фон всей страницы */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Geist', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  color: black;
+}
+
+/* Центральный контейнер с градиентом */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+
+  /* Градиент на весь экран */
+  background: linear-gradient(135deg, #b8468a, #7873f5);
+  color: #e6e6e6;
+}
+
+/* Секции — теперь полупрозрачные */
+.section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 60px 0;
+  padding: 40px;
+
+  /* Полупрозрачный белый фон с размытием */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Эффект frosted glass */
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px); /* Легкий эффект при наведении */
+}
+
+h1, h2, h3 {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  color: white; /* Чтобы заголовки были видны на градиенте */
+}
+
+a.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: white;
+  color: #ff6ec4;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a.button:hover {
+  background: #ff6ec4;
+  color: white;
+}
+
+details {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+/*Для анимации*/
+.section {
+  opacity: 0.2;
+  transform: translateY(80px);
+  transition: all 1.5s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(80px);
+}
+
+/*------------------------Кастомные стили Index------------------------*/
+
+
+/*------------------------Кастомные стили Header и Footer------------------------*/
+.header-center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: transparent; /* Если фон прозрачный */
+}
+
+.main-logo-wrap {
+  margin-bottom: 20px;
+}
+
+.nav-menu-links-wrap {
+  width: 100%;
+  max-width: 600px;
+}
+
+.nav-links-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.single-nav-link div {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: #6f42c1;
+  transition: color 0.3s ease;
+}
+
+.single-nav-link:hover div {
+  color: #ff6ec4;
+}
+
+/*------------------------Кастомные стили Header и Footer------------------------*/

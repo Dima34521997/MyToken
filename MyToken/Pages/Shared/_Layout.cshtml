@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>@ViewData["Title"] – MyToken</title>
+    <meta name="viewport" content="width=device-width, initial-scale=4.0"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/site.css"/>
+    
+</head>
+
+<body class="body">
+<!-- Навигационное меню -->
+@* <header class="navbar w-nav" data-collapse="medium" role="banner"> *@
+@*     <div class="container header-center-container"> *@
+@*         <a href="/" class="main-logo-wrap w-nav-brand"> *@
+@*             <img src="/images/logo.svg" alt="MamaBull Logo" class="main-logo"/> *@
+@*         </a> *@
+@*         <nav role="navigation" class="nav-menu-links-wrap w-nav-menu"> *@
+@*             <div class="nav-links-flex"> *@
+@*                 <a href="#about" class="single-nav-link w-inline-block"> *@
+@*                     <div>About</div></a> *@
+@*                 <a href="#roadmap" class="single-nav-link w-inline-block"> *@
+@*                     <div>Roadmap</div></a> *@
+@*                 <a href="#tokenomics" class="single-nav-link w-inline-block"> *@
+@*                     <div>Tokenomics</div></a> *@
+@*                 <a href="#faq" class="single-nav-link w-inline-block"> *@
+@*                     <div>FAQ</div></a> *@
+@*                 <a href="/whitepaper.pdf" target="_blank" class="single-nav-link w-inline-block"> *@
+@*                     <div>WhitePaper</div></a> *@
+@*             </div> *@
+@*         </nav> *@
+@*     </div> *@
+@* </header> *@
+
+<!-- Основное содержимое -->
+<div class="main-content">
+    @RenderBody()
+</div>
+
+<!-- Футер -->
+@* <footer class="footer-wrapper"> *@
+@*     <div class="container"> *@
+@*         <div class="footer-content-flex-wrap"> *@
+@*             <div class="split-content"> *@
+@*                 <p>&copy; 2025 MyToken. All rights reserved.</p> *@
+@*             </div> *@
+@*             <div class="social-links"> *@
+@*                 <a href="https://x.com/MyToken" target="_blank" class="social-link w-inline-block"> *@
+@*                     <img src="/img/YouTub.png" alt="X (Twitter)" class="icon-2"/> *@
+@*                 </a> *@
+@*                 <a href="https://t.me/MyToken" target="_blank" class="social-link w-inline-block"> *@
+@*                     <img src="/images/telegram.png" alt="Telegram" class="icon-2"/> *@
+@*                 </a> *@
+@*                 <a href="https://youtube.com/mamaBullToken"  target="_blank" class="social-link w-inline-block"> *@
+@*                     <img src="/images/youtube.png" alt="YouTube" class="icon-2" /> *@
+@*                 </a> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@* </footer> *@
+
+<!-- JS -->
+<script src="~/js/main.js"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
