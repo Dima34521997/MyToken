@@ -36,7 +36,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Geist', sans-serif;
+  font-family: 'Geist', "Comic Sans MS", serif;
   background-color: #f9f9f9;
   min-height: 100vh;
   color: black;
@@ -54,23 +54,24 @@ body {
   box-sizing: border-box;
 
   /* Градиент на весь экран */
-  background: linear-gradient(135deg, #b8468a, #7873f5);
+  /*background: linear-gradient(360deg, #c963db, #7873f5);*/
+  /*background: #0a53be;*/
   color: #e6e6e6;
 }
 
 /* Секции — теперь полупрозрачные */
 .section {
-  width: 100%;
-  max-width: 1000px;
-  margin: 60px 0;
+  width: 80%;
+  /*max-width: 1000px;*/
+  margin: 60px auto;
   padding: 40px;
 
   /* Полупрозрачный белый фон с размытием */
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px); /* Эффект frosted glass */
-  transition: transform 0.3s ease;
+  backdrop-filter: blur(4px); /* Эффект frosted glass */
+  transition: transform 0.4s ease;
 }
 
 .section:hover {
@@ -80,7 +81,7 @@ body {
 h1, h2, h3 {
   margin: 0 0 20px 0;
   font-weight: bold;
-  color: white; /* Чтобы заголовки были видны на градиенте */
+  color: #070707; /* Чтобы заголовки были видны на градиенте */
 }
 
 a.button {
@@ -129,46 +130,49 @@ summary {
 
 
 /*------------------------Кастомные стили Header и Footer------------------------*/
-.header-center-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-text-align: center;
-}
+/*.header-center-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*text-align: center;*/
+/*}*/
 
 .navbar {
-  position: relative;
-  width: 100%;
+  position: marker;
+  /*width: 100%;*/
   background-color: transparent; /* Если фон прозрачный */
 }
 
-.main-logo-wrap {
-  margin-bottom: 20px;
-}
+/*.main-logo-wrap {*/
+/*  margin-bottom: 20px;*/
+/*}*/
 
-.nav-menu-links-wrap {
-  width: 100%;
-  max-width: 600px;
-}
+/*.nav-menu-links-wrap {*/
+/*  width: 100%;*/
+/*  max-width: 600px;*/
+/*}*/
 
-.nav-links-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
-}
+/*.nav-links-flex {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  gap: 15px;*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*}*/
 
-.single-nav-link div {
-  color: black;
-  font-size: 1.2rem;
-  text-decoration: #6f42c1;
-  transition: color 0.3s ease;
-}
+/*.single-nav-link div {*/
+/*  color: black;*/
+/*  font-size: 1.2rem;*/
+/*  text-decoration: #6f42c1;*/
+/*  transition: color 0.3s ease;*/
+/*}*/
 
-.single-nav-link:hover div {
-  color: #ff6ec4;
-}
+/*.single-nav-link:hover div {*/
+/*  color: #ff6ec4;*/
+/*}*/
 
 /*------------------------Кастомные стили Header и Footer------------------------*/
+
+
+

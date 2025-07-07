@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace MyToken.Pages;
+namespace PapaLama.Pages;
 
 public class IndexModel : PageModel
 {

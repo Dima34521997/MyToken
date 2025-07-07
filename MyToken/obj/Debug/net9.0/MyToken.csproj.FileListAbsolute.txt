@@ -91,9 +91,7 @@ C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\ref\MyToken.dll
 C:\Users\EDN\RiderProjects\MyToken\MyToken\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\MyToken.csproj.AssemblyReference.cache
 C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\MyToken.csproj.Up2Date
-C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\compressed\y4gvhhp520-kmcun0tmpf.gz
-C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\compressed\edv3trtfbi-x3s63tupwa.gz
-C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\compressed\qce6gv75en-6yg3ytb8xs.gz
-C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\compressed\c10k9xpacq-taz0pouvtv.gz
 C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\compressed\3anzvj6u6c-o6qmz1xomo.gz
-C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\compressed\zrm62c1cto-jqosmn0vo1.gz
+C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\MyToken.sourcelink.json
+C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\compressed\w1ifvyt8eu-g4gx31uuis.gz
+C:\Users\EDN\RiderProjects\MyToken\MyToken\obj\Debug\net9.0\compressed\zrm62c1cto-wxsn0038uf.gz

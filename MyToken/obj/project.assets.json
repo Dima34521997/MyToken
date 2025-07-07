@@ -60,9 +60,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EDN\\RiderProjects\\MyToken\\MyToken\\MyToken.csproj",
-      "projectName": "MyToken",
-      "projectPath": "C:\\Users\\EDN\\RiderProjects\\MyToken\\MyToken\\MyToken.csproj",
+      "projectUniqueName": "C:\\Users\\EDN\\RiderProjects\\MyToken\\MyToken\\PapaLama.csproj",
+      "projectName": "PapaLama",
+      "projectPath": "C:\\Users\\EDN\\RiderProjects\\MyToken\\MyToken\\PapaLama.csproj",
       "packagesPath": "C:\\Users\\EDN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\EDN\\RiderProjects\\MyToken\\MyToken\\obj\\",
       "projectStyle": "PackageReference",

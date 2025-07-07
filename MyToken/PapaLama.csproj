@@ -16,4 +16,11 @@
       <Folder Include="wwwroot\img\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\data\faq.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\data\roadmap.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\data\team.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\data\tokenomics.json" />
+    </ItemGroup>
+
 </Project>
