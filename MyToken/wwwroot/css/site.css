@@ -1,3 +1,4 @@
+/* Base font sizes */
 html {
   font-size: 14px;
 }
@@ -8,7 +9,12 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+/* Focus styles */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -19,20 +25,23 @@ html {
 
 body {
   margin-bottom: 60px;
+  margin-top: 100px;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+/* Form placeholders */
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
   text-align: end;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
 
-/*------------------------Кастомные стили Index*------------------------/
+/*------------------------ Base styles ------------------------*/
 
-/* Градиентный фон всей страницы */
 body {
   margin: 0;
   padding: 0;
@@ -42,7 +51,6 @@ body {
   color: black;
 }
 
-/* Центральный контейнер с градиентом */
 .center-container {
   display: flex;
   flex-direction: column;
@@ -52,36 +60,37 @@ body {
   text-align: center;
   padding: 40px 20px;
   box-sizing: border-box;
-
-  /* Градиент на весь экран */
-  /*background: linear-gradient(360deg, #c963db, #7873f5);*/
-  /*background: #0a53be;*/
-  color: #e6e6e6;
 }
 
-/* Секции — теперь полупрозрачные */
+/*------------------------ Section styles ------------------------*/
+
 .section {
+  text-align: center;
   width: 80%;
-  /*max-width: 1000px;*/
   margin: 60px auto;
   padding: 40px;
-
-  /* Полупрозрачный белый фон с размытием */
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px); /* Эффект frosted glass */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
   transition: transform 0.4s ease;
 }
 
+.section ul,
+.section li {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: center;
+}
+
 .section:hover {
-  transform: translateY(-5px); /* Легкий эффект при наведении */
+  transform: translateY(-5px);
 }
 
 h1, h2, h3 {
   margin: 0 0 20px 0;
   font-weight: bold;
-  color: #070707; /* Чтобы заголовки были видны на градиенте */
+  color: #070707;
 }
 
 a.button {
@@ -114,7 +123,8 @@ summary {
   color: white;
 }
 
-/*Для анимации*/
+/*------------------------ Animations ------------------------*/
+
 .section {
   opacity: 0.2;
   transform: translateY(80px);
@@ -123,56 +133,99 @@ summary {
 
 .section.visible {
   opacity: 1;
-  transform: translateY(80px);
+  transform: translateY(0);
 }
 
-/*------------------------Кастомные стили Index------------------------*/
+/*------------------------ Hero section ------------------------*/
 
+#hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
 
-/*------------------------Кастомные стили Header и Footer------------------------*/
-/*.header-center-container {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*text-align: center;*/
-/*}*/
+/*------------------------ Particles background ------------------------*/
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/img/lamaclub.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*------------------------ Navbar styles ------------------------*/
 
 .navbar {
-  position: marker;
-  /*width: 100%;*/
-  background-color: transparent; /* Если фон прозрачный */
+  background-color: transparent; /* Прозрачный фон */
+  backdrop-filter: blur(10px); /* Размытие фона */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Тень */
+  transition: all 0.3s ease;
 }
 
-/*.main-logo-wrap {*/
-/*  margin-bottom: 20px;*/
-/*}*/
+.navbar-brand img {
+  width: auto; /* Автоматическая ширина логотипа */
+  height: 60px; /* Высота логотипа */
+}
 
-/*.nav-menu-links-wrap {*/
-/*  width: 100%;*/
-/*  max-width: 600px;*/
-/*}*/
+.nav-link {
+  color: #fff; /* Белый цвет текста */
+  font-weight: bold;
+  padding: 15px 20px;
+  transition: color 0.3s ease;
+}
 
-/*.nav-links-flex {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  gap: 15px;*/
-/*  padding: 0;*/
-/*  margin: 0;*/
-/*}*/
+.nav-link:hover {
+  color: #ff6ec4; /* Цвет при наведении */
+}
 
-/*.single-nav-link div {*/
-/*  color: black;*/
-/*  font-size: 1.2rem;*/
-/*  text-decoration: #6f42c1;*/
-/*  transition: color 0.3s ease;*/
-/*}*/
+.navbar-toggler {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
 
-/*.single-nav-link:hover div {*/
-/*  color: #ff6ec4;*/
-/*}*/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
-/*------------------------Кастомные стили Header и Footer------------------------*/
+/*------------------------ Gallery styles ------------------------*/
 
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.img-fluid.rounded.shadow {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
+/*------------------------ Mobile responsiveness ------------------------*/
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    height: 40px; /* Уменьшаем размер логотипа на мобильных */
+  }
+
+  .nav-link {
+    padding: 10px 15px; /* Уменьшаем отступы */
+  }
+
+  .section {
+    padding: 20px; /* Уменьшаем отступы секций */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Добавляем больше отступов между карточками */
+  }
+}
